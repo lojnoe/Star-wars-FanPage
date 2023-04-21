@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Star Wars"; 
+    src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/star-wars.woff);
+  }
+
+body{
+    background-image: url(https://static.videezy.com/system/resources/thumbnails/000/042/456/original/Sky-night-rotation-space-background.jpg);
+}
+
+h1 {
+    color: white;
+}
