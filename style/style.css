@@ -1,12 +1,175 @@
+*{
+    cursor: url('../img/cursor.cur'), 
+    auto; 
+}
 @font-face {
-    font-family: "Star Wars"; 
-    src: url(https://jsbin-user-assets.s3.amazonaws.com/rafaelcastrocouto/star-wars.woff);
+
+    font-family: 'STAR WARS';
+
+    src: url("../Fonts/SF\ Distant\ Galaxy\ Outline.ttf");
+
+}
+
+@font-face {
+
+    font-family: 'STAR WARS2';
+
+    src: url("../Fonts/SF\ Distant\ Galaxy\ Italic.ttf");
+
+}
+
+@font-face {
+
+    font-family: 'STAR WARS3';
+
+    src: url("../Fonts/SF\ Distant\ Galaxy\ Symbols\ Italic.ttf");
+
+}
+
+body {
+    background-image: url(../img/Sky-night-rotation-space-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*titulo index*/
+.h1titu {
+    font-family: 'STAR WARS';
+    color: rgb(220, 184, 1);
+    font-size: 150px;
+    text-align: center;
+    margin-top: 199px;
+}
+h1:hover{
+    transition: all;
+    color: rgb(197, 8, 8);
+    text-decoration: none;
+    transition-duration: .8s;
+    -webkit-transition-duration:.8s;
+    letter-spacing: 30px;
+    
+    /*PRUEBA PARA FONDO DETRAS DE LETRAS HOVER*/
+   /* background-image: url("../img/maul.jpg");
+    background-repeat: no-repeat;
+    width: auto;*/
+}
+.introduccion_index{
+    color: rgb(220, 184, 1);
+    text-align: center;
+    margin-left: 355px;
+    font-family: 'STAR WARS2';
+}
+
+.introduccion_index:hover{
+    color: rgb(197, 8, 8);
+    transition-duration: .8s;
+    transition: all;
+    -webkit-transition-duration:.8s;
+}
+
+/*titulo index, se ha quitado la barra que genera un link*/
+a{
+    text-decoration: none;
+}
+/*titulo index margenes*/
+p{
+    margin: auto;
+}
+
+/*contenedor index*/
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+/*articulos de planetas*/
+.h1titupla {
+    font-family: 'STAR WARS2';
+    color: rgb(220, 184, 1);
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+article{
+    position: relative;
+    width: 250px;
+    transition: all .3s ease;
+}
+article img:first-child{
+    box-shadow: 0 60px 60px -60px rgba(255, 149, 0, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+article img:last-child{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;   
+}
+article:hover{
+   transform: perspective(250px) 
+              rotateX(10deg)
+              translateY(-5%)
+              translateZ(0);
+}
+article::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: 
+    linear-gradient(
+        to bottom, transparent 10%, 
+        rgba(0, 0, 0, 0.5) 50%,
+        rgba(0, 0, 0, 0)95%
+    );
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+article:hover::before{
+    opacity: 1;
+}
+article:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
+}
+h4{
+    color: rgb(220, 184, 1);
+    font-family: 'STAR WARS2';
+    margin-left: 60px;
+    letter-spacing: 2px;
+}
+.galacticletter{
+    font-family: 'STAR WARS3';
+    margin:auto 42px auto;
+    color: crimson;
+}
+ul{
+    color: rgb(220, 184, 1);
+    font-family: 'STAR WARS2';
+    font-size: 90%;
+}
+
+/*ANIMACIONES DE ANIMACSS*/
+.my-element {
+    display: inline-block; 
+    animation: fade; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
   }
-
-body{
-    background-image: url(https://static.videezy.com/system/resources/thumbnails/000/042/456/original/Sky-night-rotation-space-background.jpg);
-}
-
-h1 {
-    color: white;
-}
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+  }
