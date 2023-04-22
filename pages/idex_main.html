@@ -9,6 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Principal</title>
+    <script src="../js/buscador.js"></script> 
   </head>
   <body class="bodymain_index">
     <!--CONTENEDOR PRINCIPAL NAV-->
@@ -52,9 +53,11 @@
               </span>
             </label>
             <label>
-              <div class="container">
-                <input type="text" placeholder="Search...">
-                <div class="search"></div>
+              <!--buscador-->
+              <div id="wrap">
+                <form action="" autocomplete="on">
+                <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+                </form>
               </div>
             </label>
             <!--ELEMENTOS DEL NAV-->
@@ -68,6 +71,6 @@
             </ul>
             </div>
         </nav> 
-    </div>   
+    </div>  
   </body>
 </html>
