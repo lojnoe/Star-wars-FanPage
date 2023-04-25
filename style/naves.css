@@ -535,19 +535,9 @@ input[type="submit"]:hover {
     float:left;
     text-align: left;
 }
-#efecto3dnave{
+.tamañoimagen{
     width: 250px;
     height: 150px;
-    width: 250px;
-    height: 150px;
-    transition:box-shadow .1s;
-    background:url('../img/anakin-podracer.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-}
-.efecto3dnave{
-    box-shadow:0px 0px 50px rgb(0,0,0,1);
 }
 .textonaves{
     position: relative;
@@ -558,4 +548,55 @@ input[type="submit"]:hover {
 }
 .titulonave{
     margin-bottom: 10px;
+}
+.imagennave {
+    position: relative;
+    width: 250px;
+    transition: all .3s ease;
+}
+
+.imagennave img:first-child {
+    box-shadow: 0 60px 60px -60px rgba(255, 149, 0, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.imagennave img:last-child {
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+}
+
+.imagennave:hover {
+    transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+.imagennave::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image:
+        linear-gradient(to bottom, transparent 10%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0)95%);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.imagennave:hover::before {
+    opacity: 1;
+}
+
+.imagennave:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
 }
