@@ -108,20 +108,20 @@ p {
     margin-top: 100px;
 }
 
-article {
+.articleplanetas {
     position: relative;
     width: 250px;
     transition: all .3s ease;
 }
 
-article img:first-child {
+.articleplanetas img:first-child {
     box-shadow: 0 60px 60px -60px rgba(255, 149, 0, 0.5);
     border-radius: 4px;
     object-fit: cover;
     width: 100%;
 }
 
-article img:last-child {
+.articleplanetas img:last-child {
     position: absolute;
     width: 200px;
     bottom: 0;
@@ -133,11 +133,11 @@ article img:last-child {
     opacity: 0;
 }
 
-article:hover {
+.articleplanetas:hover {
     transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
 }
 
-article::before {
+.articleplanetas::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -151,11 +151,11 @@ article::before {
     transition: all .3s ease;
 }
 
-article:hover::before {
+.articleplanetas:hover::before {
     opacity: 1;
 }
 
-article:hover img:last-child {
+.articleplanetas:hover img:last-child {
     opacity: 1;
     transform: translateY(10%);
 }
