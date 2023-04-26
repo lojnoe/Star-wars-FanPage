@@ -182,12 +182,12 @@ ul {
 /*NAVBAR*/
 
 #background_nav {
-    display: flex;
+    display: block;
     text-align: center;
     background-color: #000000;
     border-radius: 12px;
     color: #d37a05;
-    padding: 70px 10px 10px;
+    padding: 70px ;
     margin: auto;
     width: auto;
 }
@@ -196,10 +196,11 @@ ul {
     font-family: 'STAR WARS2';
     color: rgb(255, 255, 255);
     font-size: 40px;
-    text-align: center;
+    margin: auto;
     position: absolute;
-    top: -120px;
-    left: 170px;
+    top: -110px;
+    left: -90px;
+    display: block;
 }
 
 .h1titunav:hover {
@@ -220,7 +221,7 @@ span>img {
     background: #000000;
     height: 40px;
     width: auto;
-    margin-left: 600px;
+    display: block;
 }
 
 /*logo*/
@@ -393,7 +394,11 @@ a:hover {
 
 /*esto alinea el titulo con los elementos del nav*/
 div>label {
-    position: fixed;
+    position: absolute;
+    top:auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
 
 }
 
@@ -419,7 +424,7 @@ input[type="text"] {
     font-weight: 100;
     border: none;
     outline: none;
-    color: #555;
+    color: #ffffff;
     padding: 3px;
     padding-right: 60px;
     width: 0px;
@@ -518,15 +523,26 @@ input[type="submit"]:hover {
   }
 
   /*MAIN*/
+  
+  .maincontainer{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
   .carousel {
+    display: block;
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
+    
   }
   
+  
   .carousel-inner {
+    display: block;
     position: absolute;
-    left: 110px;
+    left: 15%;
     overflow: hidden;
     width: auto;
     border: 1px solid rgb(255, 255, 255);
