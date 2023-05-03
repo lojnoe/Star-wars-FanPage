@@ -12,6 +12,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+   
 
 }
 
@@ -41,8 +42,9 @@
 
 body {
     background-image: url(../img/Sky-night-rotation-space-background.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
+    overflow: auto;
 
 }
 
@@ -187,7 +189,7 @@ ul {
     background-color: #000000;
     border-radius: 12px;
     color: #d37a05;
-    padding: 70px ;
+    padding: 70px;
     margin: auto;
     width: auto;
 }
@@ -395,7 +397,7 @@ a:hover {
 /*esto alinea el titulo con los elementos del nav*/
 div>label {
     position: absolute;
-    top:auto;
+    top: auto;
     bottom: auto;
     left: auto;
     right: auto;
@@ -468,78 +470,81 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     opacity: 0.8;
-  }
-  
-  /*--------------------------*/
-  /*----- propiedades de tamaño -----*/
-  /*--------------------------*/
-  
-  @media (max-width: 92px) {
-      label.logo {
-          padding-left: 10px;
-      }
-  
-      nav ul li a {
-          font-size: 11px;
-      }
-  }
-  
-  @media (max-width: 85px) {
-      .checkbtn {
-          display: block;
-      }
-  
-      ul {
-          position: fixed;
-          width: 100%;
-          height: 100vh;
-          top: 80px;
-          left: -100%;
-          top: 80px;
-          transition: all .5s;
-          text-align: center;
-          background-color: #2c3e50;
-      }
-  
-      nav ul li {
-          display: block;
-          margin: 50px 0;
-          line-height: 30px;
-      }
-  
-      nav ul li a {
-          font-size: 20px;
-      }
-  
-      a:hover,
-      a.active {
-          background: none;
-          color: #0082e6;
-      }
-  
-      #check:checked~ul {
-          left: 0;
-      }
-  }
+}
 
-  /*MAIN*/
-  
-  .maincontainer{
+/*--------------------------*/
+/*----- propiedades de tamaño -----*/
+/*--------------------------*/
+
+@media (max-width: 92px) {
+    label.logo {
+        padding-left: 10px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 85px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        top: 80px;
+        transition: all .5s;
+        text-align: center;
+        background-color: #2c3e50;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/*MAIN*/
+
+.maincontainer {
     width: auto;
     height: auto;
     display: block;
     margin: auto;
-  }
-  .carousel {
+  
+}
+
+.carousel {
     display: block;
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
     
-  }
-  
-  
-  .carousel-inner {
+
+}
+
+
+.carousel-inner {
     display: block;
     position: absolute;
     left: 15%;
@@ -547,27 +552,27 @@ input[type="submit"]:hover {
     width: auto;
     border: 1px solid rgb(255, 255, 255);
     box-shadow: 12px 12px 12px rgba(255, 255, 255, 0.363);
-  }
-  
-  .carousel-open:checked + .carousel-item {
+}
+
+.carousel-open:checked+.carousel-item {
     position: static;
     opacity: 100;
-  }
-  
-  .carousel-item {
+}
+
+.carousel-item {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
-  }
-  
-  .carousel-item img {
+}
+
+.carousel-item img {
     display: block;
     height: auto;
     max-width: 100%;
-  }
-  
-  .carousel-control {
+}
+
+.carousel-control {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
@@ -585,28 +590,28 @@ input[type="submit"]:hover {
     text-align: center;
     width: 40px;
     z-index: 10;
-  }
-  
-  .carousel-control.prev {
+}
+
+.carousel-control.prev {
     left: 2%;
-  }
-  
-  .carousel-control.next {
+}
+
+.carousel-control.next {
     right: 2%;
-  }
-  
-  .carousel-control:hover {
+}
+
+.carousel-control:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
-  }
-  
-  #carousel-1:checked ~ .control-1,
-  #carousel-2:checked ~ .control-2,
-  #carousel-3:checked ~ .control-3 {
+}
+
+#carousel-1:checked~.control-1,
+#carousel-2:checked~.control-2,
+#carousel-3:checked~.control-3 {
     display: block;
-  }
-  
-  .carousel-indicators {
+}
+
+.carousel-indicators {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -616,43 +621,31 @@ input[type="submit"]:hover {
     right: 0;
     text-align: center;
     z-index: 10;
-  }
-  
-  .carousel-indicators li {
+}
+
+.carousel-indicators li {
     display: inline-block;
     margin: 0 5px;
-  }
-  
-  .carousel-bullet {
+}
+
+.carousel-bullet {
     color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
-  }
-  
-  .carousel-bullet:hover {
+}
+
+.carousel-bullet:hover {
     color: #aaaaaa;
-  }
-  
-  #carousel-1:checked
-    ~ .control-1
-    ~ .carousel-indicators
-    li:nth-child(1)
-    .carousel-bullet,
-  #carousel-2:checked
-    ~ .control-2
-    ~ .carousel-indicators
-    li:nth-child(2)
-    .carousel-bullet,
-  #carousel-3:checked
-    ~ .control-3
-    ~ .carousel-indicators
-    li:nth-child(3)
-    .carousel-bullet {
+}
+
+#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
     color: #428bca;
-  }
-  
-  #title {
+}
+
+#title {
     width: 100%;
     position: absolute;
     padding: 0px;
@@ -663,10 +656,19 @@ input[type="submit"]:hover {
     font-family: "Open Sans", sans-serif;
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
-      -1px 0px 2px rgba(255, 255, 255, 0);
-  }
-  
+        -1px 0px 2px rgba(255, 255, 255, 0);
+}
 
+/*Mandalorian*/
+
+.imagen{
+position: absolute;
+    top: 1020px;
+    left: 350px;
+    margin: auto;
+    display:inline-block;
+}
+  
 
 /*ANIMACIONES DE ANIMACSS*/
 .my-element {
