@@ -42,7 +42,7 @@
 
 body {
     background-image: url(../img/Sky-night-rotation-space-background.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size:cover;
     overflow:auto;
 
@@ -281,6 +281,7 @@ span>img {
     height: 40px;
     width: auto;
     display: block;
+    margin-left: 100px;
 }
 
 /*logo*/
@@ -579,4 +580,24 @@ input[type="submit"]:hover {
     #check:checked~ul {
         left: 0;
     }
+}
+
+
+/*ANIMACIONES DE ANIMACSS*/
+.my-element {
+    display: inline-block;
+    animation: fade;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s;
+    /* don't forget to set a duration! */
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
 }
