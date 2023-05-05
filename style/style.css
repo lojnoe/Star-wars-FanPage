@@ -726,10 +726,19 @@ input[type="submit"]:hover {
  z-index: -1;
   border-radius: 12px;
 }
+
 .texto{
   position: relative;
   top: 220px;
+  left: 22px;
+  cursor: pointer;
 }
+.textobtf2{
+  padding-bottom: 160px;
+  cursor: pointer;
+  display: grid;
+}
+
 .clear {
   clear: both;
 }
@@ -1023,7 +1032,12 @@ a:hover {
     -webkit-transform: translateY(calc(100% - 42px));
   }
 }
-
+/*VIDEOS*/
+.video1{
+  width: 320px;
+  height: 400px;
+ 
+}
 
 /*ANIMACIONES DE ANIMACSS*/
 .my-element {
