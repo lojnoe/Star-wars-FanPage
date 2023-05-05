@@ -582,6 +582,11 @@ input[type="submit"]:hover {
     }
 }
 
+.tamañoimagen{
+    width: 250px;
+    height: 150px;
+}
+
 
 /*ANIMACIONES DE ANIMACSS*/
 .my-element {
