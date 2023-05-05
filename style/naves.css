@@ -695,6 +695,7 @@ input[type="submit"]:hover {
     text-align: left;
 }
 .containernaves2{
+    margin-top:10px;
     width: 600px;
     color:white;
     float:left;
@@ -710,6 +711,7 @@ input[type="submit"]:hover {
     right:-260px;
     display: block;
     width: 500px;
+    text-align:justify;
 }
 .titulonave{
     margin-bottom: 10px;
