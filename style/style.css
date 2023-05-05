@@ -824,9 +824,8 @@ a:hover {
 /******* Middle section CSS Start ******/
 /* -------- Landing page ------- */
 .game-section {
-  
-  display: inline-flex;
-  position: absolute;
+  margin-top: 100px;
+  margin-left: 120px;
 }
 
 .game-section .owl-stage {
@@ -838,8 +837,8 @@ a:hover {
 .game-section .item {
   position: absolute;
   float: left;
-  margin: 0 15px 60px;
-  width: 320px;
+  margin: 0 25px 90px;
+  width: 399px;
   height: 300px;
   display: flex;
   display: -webkit-flex;
@@ -1035,7 +1034,8 @@ a:hover {
 /*VIDEOS*/
 .video1{
   width: 320px;
-  height: 400px;
+  height: 300px;
+  z-index: 1;
  
 }
 
