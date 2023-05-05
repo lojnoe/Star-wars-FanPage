@@ -1,208 +1,67 @@
-
-* {
-    cursor: url('../img/cursor.cur'), auto;
-    vertical-align: baseline;
-    font-weight: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    border: 0 none;
-    outline: 0;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-
-
-}
-
-@font-face {
-
-    font-family: 'STAR WARS';
-
-    src: url("../Fonts/SF\ Distant\ Galaxy\ Outline.ttf");
-
-}
-
-@font-face {
-
-    font-family: 'STAR WARS2';
-
-    src: url("../Fonts/SF\ Distant\ Galaxy\ Italic.ttf");
-
-}
-
-@font-face {
-
-    font-family: 'STAR WARS3';
-
-    src: url("../Fonts/SF\ Distant\ Galaxy\ Symbols\ Italic.ttf");
-
-}
-
-
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 body {
-    background: #eee;
-    
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-
-    background-image: url(../img/Sky-night-rotation-space-background.jpg);
-    background-repeat: repeat;
-    overflow:auto;
+  background: whitesmoke;
+  background: #030309;
+  font-family: "Major Mono Display", monospace;
+  font-size: 62.5%;
 }
 
-details{
-    margin-left: 40px;
-    margin-right: 40px;
-    line-height: 1.45;
-}
-.card {
-    margin-top: 40px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-    padding: 40px;
-    border: #fff 1px solid;
-    text-shadow: 0 0 30px #fff;
-    box-shadow: 0 0 20px #fff;
-    background: #fff;
-    position: relative;
-    min-height: 450px;
-    background: #070707;
-    color: white;
-    transition: .3s transform linear;
+section {
+  min-width: 500px;
 }
 
-.card:hover {
-    transform: scale(1.01);
-    transition: all 2s;
-    box-shadow: 0 0 20px #1da1f2;
+.wrapper {
+  color: whitesmoke;
+  height: 500px;
+  margin-top: 20px;
+  position: relative;
 }
 
-summary > h2 {
-    font-size: 46px;
-    margin-bottom: 0;
-    margin-top: 0;
-    line-height: 1.3;
+.ui {
+  margin: 20px auto;
+  text-align: center;
+  width: 160px;
+}
+.ui .dynamicList {
+  margin-top: 10px;
 }
 
-summary > h3 {
-    line-height: 1.2;
-    color: #555;
-    font-size: 30px;
-    margin-top: 0;
-    padding-top: 0;
+label {
+  color: whitesmoke;
 }
 
-.card[open] {
-    position: relative;
-    padding-top: 280px;
-    box-shadow: 0 0 20px #1da1f2;
+input[type=checkbox] {
+  vertical-align: middle;
 }
 
-.card[open]:hover {
-    transform: scale(1);
-    box-shadow: 0 0 20px #1da1f2;
+a {
+  color: whitesmoke;
 }
 
-.card[open] summary:before {
-    content: '×';
-    display: block;
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 500px;
-    position: absolute;
-    right: -20px;
-    top: -20px;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    color: black;
-    z-index: 999;
-    transition: all .3s linear;
-    animation: pop .3s linear forwards;
-    box-shadow: 0 0 20px #1da1f2;
+.centered {
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
-@keyframes pop {
-    0% {
-        transform: scale(0);
-    }
-
-    80% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+.timeOutput {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
-summary {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    padding: 40px;
-    padding-top: 160px;
+.timeOutput .small {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: normal;
+  line-height: 0.7rem;
+  margin-bottom: 5px;
+  max-width: 142px;
 }
-
-summary > p {
-    max-width: 450px;
-    font-size: 17px;
-    line-height: 1.4;
-    color: #eee;
-}
-
-.card p {
-    animation: none;
-    padding-top: 0;
-}
-
-.card[open] p {
-    animation: appear 0.5s linear forwards;
-}
-
-@keyframes appear {
-    0% {
-        transform: translate(0, 50px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(0, 0);
-        opacity: 1;
-    }
-}
-
-.crop {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    width: 40%;
-    overflow: hidden;
-    object-fit: cover;
-    height: 100%;
-    object-position: 30% 50%;
-    border-radius: 5px;
-}
-
-.crop img {
-    width: 1200px;
-    
-}
-
-.crop1 {
-    width: 1200px;
-    position: absolute;
-    top: -100px;
-    left: -200px;
+.timeOutput .title {
+  display: inline-block;
+  margin: 5px 0;
 }
 
 #background_nav {
@@ -277,7 +136,7 @@ nav ul {
     margin-top: 62px;
     margin-right: 120px;
     cursor: pointer;
-     font-family: 'STAR WARS2'
+
 }
 
 nav ul li {
@@ -499,22 +358,54 @@ input[type="submit"]:hover {
 /*----- propiedades de tamaño -----*/
 /*--------------------------*/
 
+@media (max-width: 92px) {
+    label.logo {
+        padding-left: 10px;
+    }
 
-/*ANIMACIONES DE ANIMACSS*/
-.my-element {
-    display: inline-block;
-    animation: fade;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 5s;
-    /* don't forget to set a duration! */
+    nav ul li a {
+        font-size: 11px;
+    }
 }
 
-.animate__animated.animate__fadeIn {
-    --animate-duration: 5s;
+@media (max-width: 85px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        top: 80px;
+        transition: all .5s;
+        text-align: center;
+        background-color: #2c3e50;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
 }
 
-/* This changes all the animations globally */
-:root {
-    --animate-duration: 800ms;
-    --animate-delay: 0.9s;
+.circulo{
+    margin: auto;
 }
