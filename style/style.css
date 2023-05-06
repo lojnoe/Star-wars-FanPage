@@ -46,8 +46,9 @@
 body {
   background-image: url(../img/Sky-night-rotation-space-background.jpg);
   background-repeat: repeat;
-  background-size: cover;
-  overflow: auto;
+  background-size: contain;
+  
+  overflow-x: hidden;;
 
 }
 
@@ -204,7 +205,7 @@ ul {
   margin: auto;
   position: absolute;
   top: -110px;
-  left: -90px;
+  left: -120px;
   display: block;
 }
 
@@ -219,7 +220,7 @@ span>img {
 }
 
 .bodymain_index {
-  font-family: 'STAR WARS2'
+  font-family: 'STAR WARS2';
 }
 
 .navicons {
@@ -529,13 +530,20 @@ input[type="submit"]:hover {
 
 /*MAIN*/
 
+/*.maincontainer {
+  width: auto;
+  height: 200px;
+  display: grid;
+  margin: auto;
+}*/
+
 .maincontainer {
   width: auto;
   height: 200px;
   display: grid;
   margin: auto;
-
 }
+
 
 
 .carousel {
@@ -543,19 +551,20 @@ input[type="submit"]:hover {
   position: relative;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
   margin-top: 26px;
-  justify-content: space-between;
+  margin-left: 150px;
+ 
+  
 
 
 }
 
 
 .carousel-inner {
-
+  cursor: pointer;
   display: block;
   position: absolute;
   left: 7%;
   overflow: hidden;
-
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 12px 12px 12px rgba(255, 255, 255, 0.363);
 }
@@ -563,19 +572,23 @@ input[type="submit"]:hover {
 .carousel-open:checked+.carousel-item {
   position: static;
   opacity: 100;
+  cursor: pointer;
 }
 
 .carousel-item {
+  cursor: pointer;
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 0.6s ease-out;
   transition: opacity 0.6s ease-out;
+  cursor: pointer;
 }
 
 .carousel-item img {
   display: block;
   height: auto;
   max-width: 100%;
+  cursor: pointer;
 }
 
 .carousel-control {
@@ -595,15 +608,24 @@ input[type="submit"]:hover {
   transform: translate(0, -50%);
   text-align: center;
   width: 40px;
-  z-index: 10;
+  z-index: 1;
+  cursor: pointer;
 }
-
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+label>span>a:hover{
+  background-color: #00000000;
+}
 .carousel-control.prev {
   left: 2%;
+  cursor: pointer;
 }
 
 .carousel-control.next {
   right: 2%;
+  cursor: pointer;
 }
 
 .carousel-control:hover {
@@ -616,6 +638,7 @@ input[type="submit"]:hover {
 #carousel-3:checked~.control-3 {
   display: block;
 }
+
 
 .carousel-indicators {
   list-style: none;
@@ -677,6 +700,7 @@ input[type="submit"]:hover {
   text-shadow: 0 0 30px #fff;
   box-shadow: 0 0 20px rgb(255, 68, 68);
   z-index: 0;
+  border-radius: 12px;
 }
 
 .card_vision {
@@ -689,6 +713,7 @@ input[type="submit"]:hover {
   border-radius: 10px;
   text-shadow: 0 0 30px #fff;
   box-shadow: 0 0 20px rgb(255, 68, 68);
+  cursor: pointer;
 }
 
 .card_vision:hover {
@@ -717,14 +742,23 @@ input[type="submit"]:hover {
   margin-top: 200px;
   margin-left: 42px;
 }
-.grogu{
+
+.groguimg{
  width: 100%;
  height: 100%;
  position: relative;
  top: -32px;
  left: 0px;
  z-index: -1;
-  border-radius: 12px;
+border-radius: 12px;
+}
+
+
+.groguimg:hover{
+  transform: scale(1.2);
+  transition: all 7s ease-in-out;
+  border: 2px solid beige;
+  box-shadow: 0 0 20px rgb(24, 105, 166);
 }
 
 .texto{
@@ -734,15 +768,120 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 .textobtf2{
-  padding-bottom: 160px;
+ font-size: 25px;
   cursor: pointer;
-  display: grid;
+  display: flex;
 }
-
+.textobtf2:hover{
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+  color: #0082e6;
+  text-indent: 70px;
+}
+.textorog{
+  cursor: pointer;
+}
+.textorog:hover{
+  color: red;
+}
+.textosound{
+  cursor: pointer;
+}
+.textosound:hover{
+  color: #d8b412;
+}
+.imgcarrusels{
+  background-image: url("../img/btf2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.imgcarrusels2{
+  background-image: url("../img/vader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.imgcarrusels3{
+  background-image: url("../img/fort.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.imgcarrusels4{
+  background-image: url("../img/amenaza fantasma.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.imgcarrusels5{
+  background-image: url("../img/venganza sith.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.imgcarrusels6{
+  background-image: url("../img/StarWarsOST.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y:center ;
+  z-index: 1;
+}
+.imgcarrusels:hover{
+  transform: scale(1.2);
+  transition: all 7s ease-in-out;
+  border: 2px solid beige;
+  color: #0082e6;
+  box-shadow: 0 0 20px rgb(24, 105, 166);
+  z-index: 1;
+}
+.imgcarrusels2:hover{
+  transform: scale(1.2);
+  transition: all 7s ease-in-out;
+  border: 2px solid beige;
+  color: #0082e6;
+  box-shadow: 0 0 20px rgb(166, 24, 24);
+  z-index: 1;
+}
+.imgcarrusels3:hover{
+  transform: scale(1.2);
+  transition: all 7s ease-in-out;
+  border: 2px solid beige;
+  color: #0082e6;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+  z-index: 1;
+  cursor: pointer;
+}
+.imgcarrusels4:hover{
+  transform: scale(1.2);
+  transition: all 7s ease-in-out;
+  border: 2px solid beige;
+  color: #0082e6;
+  box-shadow: 0 0 20px rgb(147, 81, 81);
+  z-index: 1;
+  cursor: pointer;
+}
+.imgcarrusels5:hover{
+  transform: scale(1.2);
+  transition: all 7s ease-in-out;
+  border: 2px solid rgb(255, 255, 255);
+  color: #0082e6;
+  box-shadow: 0 0 20px rgb(43, 96, 156);
+  z-index: 1;
+  cursor: pointer;
+}
+.imgcarrusels6:hover{
+  transform: scale(1.2);
+  transition: all 7s ease-in-out;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgb(255, 217, 0);
+  z-index: 1;
+  cursor: pointer;
+}
 .clear {
   clear: both;
 }
-
 .imagenescartas {
   max-width: 100%;
   border: 0px;
@@ -790,7 +929,12 @@ a:hover {
   margin: 0 0 10px;
   font-size: 28px;
   line-height: 36px;
-  z-index: 1;
+  z-index: 1; 
+  cursor: pointer;
+}
+.h3-game:hover{
+  text-indent: 80px;
+  transition: all .3s ;
 }
 
 /******* Common Element CSS End *********/
@@ -1024,7 +1168,6 @@ a:hover {
     box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
     -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
   }
-
   .game-section .item-desc {
     padding: 0 14px 5px;
     transform: translateY(calc(100% - 42px));
@@ -1037,7 +1180,71 @@ a:hover {
   height: 300px;
   z-index: 1;
  
+} 
+.fondovideos{
+  width: auto;
+  height: auto;
+  background-color: #0082e6;
+  z-index: 1;
+  position: absolute;
+  left: 2000PX;
 }
+
+.videodiv{
+  width: auto;
+  height: auto;
+  position: relative;
+  left: -120px;
+  top: 1600px;
+}
+.video2{
+  width: 50%;
+  height: auto;
+  position: relative;
+  left: 130px;
+}
+.video3{
+  width: 50%;
+  height: auto;
+  float: left;
+  position: relative;
+  left: 120px;
+  
+}
+.titusvideo{
+  color: #cbb616;
+  position: relative;
+  top: 1500px;
+  left: 30%;
+  font-size: 30px;
+}
+footer{
+   color: #BBB;
+   position: absolute;
+   top: 4400px;
+}
+footer>span{
+  position: relative;
+  top: -122px;
+  left: 900px;
+}
+.tlf,.email{
+  position: relative;
+  top: 12px;
+  left: 152px;
+  cursor: pointer;
+
+
+}
+.pcorreo{
+  position: relative;
+  top: 22px;
+  left: 90px; 
+  color: #cbb616;
+  cursor: pointer;
+}
+
+
 
 /*ANIMACIONES DE ANIMACSS*/
 .my-element {
