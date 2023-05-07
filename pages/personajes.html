@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personajes</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+    <link rel="stylesheet" href="../style/personajes.css">
+    <link rel="shortcut icon"
+        href="https://abs.twimg.com/hashflags/DisneyPlus_MandalorianS3_Grogu_2023_NEW/DisneyPlus_MandalorianS3_Grogu_2023_NEW.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="../js/buscador.js"></script>
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+
+    <div class="flying-objects">
+        <img id="flying-object-02" class=""
+            src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/cloud-02.png">
+        <img id="flying-object-01" class=""
+            src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/cloud-01.png">
+    </div>
+
+    <div id="background_nav">
+        <nav>
+            <!--LOGO IZQUIERDA-->
+            <a href="../pages/planetas.html" target="_blank">
+                <label class="logo">
+                    <div id="logoimg"></div>
+                </label></a>
+            <!--DIV FIXED DEL NAV PRINCIPAL-->
+            <div>
+                <!--TITULO SW-->
+                <label>
+                    <a href="../index.html">
+                        <h1 class="animate__animated animate__fadeIn h1titunav">
+                            <p class="cursor_hand">STAR</p>
+
+                            <br>
+                            <p>WARS</p>
+                        </h1>
+                    </a>
+                </label>
+                <!--ICONOS SUPERIORES IZQUIERDA-->
+                <label class="logo">
+                    <span class="wrapper">
+                        <a href="https://www.facebook.com/starwars.es/" target="_blank" rel="noopener noreferrer">
+                            <span class="icon facebook">
+                                <span class="tooltip">Facebook</span>
+                                <span><i class="fab fa-facebook-f"></i></span>
+                            </span>
+                        </a>
+                        <a href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer">
+                            <span class="icon twitter">
+                                <span class="tooltip">Twitter</span>
+                                <span><i class="fab fa-twitter"></i></span>
+                            </span>
+                        </a>
+                        <a href="https://www.instagram.com/starwars/?hl=es" target="_blank" rel="noopener noreferrer">
+                            <span class="icon instagram">
+                                <span class="tooltip">Instagram</span>
+                                <span><i class="fab fa-instagram"></i></span>
+                            </span>
+                        </a>
+                        <a href="https://github.com/lojnoe/EntornosWeb.git" target="_blank" rel="noopener noreferrer">
+                            <span class="icon github">
+                                <span class="tooltip">Github</span>
+                                <span><i class="fab fa-github"></i></span>
+                            </span>
+                        </a>
+                        <a href="https://www.youtube.com/@StarWarsEspana" target="_blank" rel="noopener noreferrer">
+                            <span class="icon youtube">
+                                <span class="tooltip">Youtube</span>
+                                <span><i class="fab fa-youtube"></i></span>
+                            </span>
+                        </a>
+                    </span>
+                </label>
+                <label>
+                    <!--buscador-->
+                    <div id="wrap">
+                        <form action="" autocomplete="on">
+                            <input id="search" name="search" type="text" placeholder="Buscar"><input id="search_submit"
+                                value="Rechercher" type="submit">
+                        </form>
+                    </div>
+                </label>
+                <!--ELEMENTOS DEL NAV-->
+                <ul class=" navicons">
+                    <li><a href="armas.html">ARMAS</a></li>
+                    <li><a href="droides.html">DROIDES</a></li>
+                    <li><a href="naves.html">NAVES</a></li>
+                    <li><a href="personajes.html">PERSONAJES</a></li>
+                    <li><a href="planetas.html">PLANETAS</a></li>
+                    <li><a href="social.html">SOCIAL</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container">
+        <div class="categories">
+
+            <div id="weaponry" class="category">
+                <h1>Weaponry</h1>
+            </div>
+
+            <div id="droids" class="category">
+                <h1>Droids</h1>
+                <div class="cards">
+                    <div class="card r2-d2 active">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/r2-d2.png"
+                                alt="R2-D2">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">R2-D2</div>
+                            <p class="p-r2-d2">A reliable and versatile astromech droid, R2-D2 has served Padmé Amidala,
+                                Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his
+                                masters and their friends from many perils. A skilled starship mechanic and fighter
+                                pilot's assistant.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Affiliations</div>
+                                <div class="content">Rebel Alliance, Galactic Republic, The Resistance</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Droid</div>
+                                <div class="content">Astromech Droid</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Dimensions</div>
+                                <div class="content">Height: 1.09m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card c2-b5">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/c2-b5.png"
+                                alt="C2-B5">
+                        </header>
+                        <main>
+                            <div class="level">Class 5</div>
+                            <div class="name">C2-B5</div>
+                            <p class="p-c2-b5">The Galactic Empire relies on astromech droids to maintain its machinery,
+                                but unlike the Rebel Alliance, Imperial technicians do not grant their droids
+                                independence and subject them to frequent memory wipes to keep them subservient.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Affiliations</div>
+                                <div class="content">Galactic Empire</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Droid</div>
+                                <div class="content">Astromech Droid</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Dimensions</div>
+                                <div class="content">Height: 1.07m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card c-3po">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/c-3po.png"
+                                alt="C-3PO">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">C-3PO</div>
+                            <p class="p-c-3po">C-3PO longs for more peaceful times, but his continued service to the
+                                Resistance — and his knowledge of more than seven million forms of communication — keeps
+                                the worry-prone droid in the frontlines of galactic conflict.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Affiliations</div>
+                                <div class="content">Rebel Alliance, The Resistance</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Droid</div>
+                                <div class="content">Protocol Droid</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Dimensions</div>
+                                <div class="content">Height: 1.75m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card battle-droid">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/battle-droid.png"
+                                alt="Battle Droid">
+                        </header>
+                        <main>
+                            <div class="level">Class 5</div>
+                            <div class="name">Battle Droid</div>
+                            <p class="p-battle-droid">Rather than use flesh-and-blood warriors, the Separatists prefer
+                                mindlessly loyal soldiers that are easily controlled. The soulless ranks of their armies
+                                are dominated by tall, thin B1 battle droids built as mechanical imitations of their
+                                Geonosian designers.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Affiliations</div>
+                                <div class="content">Trade Federation, Confederacy of Independent Systems</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Droid</div>
+                                <div class="content">Battle Droid</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Dimensions</div>
+                                <div class="content">Height: 1.93m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card droideka">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droideka.png"
+                                alt="Droideka">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">Droideka</div>
+                            <p class="p-droideka">Unlike the spindly battle droids, whose humanoid builds allow them a
+                                degree of versatility, droidekas are designed with one sole function in mind: the
+                                complete annihilation of their targets.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Affiliations</div>
+                                <div class="content">Trade Federation, Confederacy of Independent Systems</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Droid</div>
+                                <div class="content">Battle Droid</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Dimensions</div>
+                                <div class="content">Height: 1.83m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card bb-8">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/bb-8.png"
+                                alt="BB-8">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">BB-8</div>
+                            <p class="p-bb-8">A skittish but loyal astromech, BB-8 accompanied Poe Dameron on many
+                                missions for the Resistance, helping to keep his X-wing in working order. When Poe’s
+                                mission to Jakku ended with his capture by the First Order, BB-8 fled into the desert
+                                with a vital clue to the location of Luke Skywalker.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Affiliations</div>
+                                <div class="content">The Resistance</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Droid</div>
+                                <div class="content">Astromech Droid</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Dimensions</div>
+                                <div class="content">Height: 0.67m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card k-2so">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/k-2so.png"
+                                alt="K-2SO">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">K-2SO</div>
+                            <p class="p-k-2so">A reprogrammed Imperial security droid now loyal to the Alliance, K-2SO
+                                is an alarming sight standing within a secret Rebel base. The pragmatic droid is an
+                                effective insertion agent, as he can blend in perfectly at Imperial installations and
+                                outposts.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Affiliations</div>
+                                <div class="content">Rebel Alliance</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Droid</div>
+                                <div class="content">Imperial security droid</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Dimensions</div>
+                                <div class="content">Height: 2.31m</div>
+                            </div>
+                        </footer>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="locations" class="category">
+                <h1>Locations</h1>
+                <div class="cards">
+                    <div class="card mustafar active">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/mustafar.png"
+                                alt="Mustafar">
+                        </header>
+                        <main>
+                            <div class="level">Class 3</div>
+                            <div class="name">Mustafar</div>
+                            <p class="p-mustafar">A tiny, fiery planet in the Outer Rim, Mustafar maintains an erratic
+                                orbit between two gas giants. Mustafar is rich in unique and valuable minerals which
+                                have long been mined by the Tech Union. Its lava pits and rivers make this planet a
+                                dangerous habitat; its natives have burly, tough bodies that can withstand extreme heat.
+                            </p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Climate</div>
+                                <div class="content">Hot</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Terrain</div>
+                                <div class="content">Rivers, Volcanoes</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Species</div>
+                                <div class="content">Alazmec</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card coruscant">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/coruscant.png"
+                                alt="Coruscant">
+                        </header>
+                        <main>
+                            <div class="level">Class 11</div>
+                            <div class="name">Coruscant</div>
+                            <p class="p-coruscant">A city-covered planet, Coruscant is the vibrant heart and capital of
+                                the galaxy, featuring a diverse mix of citizens and culture. It features towering
+                                skyscrapers, streams of speeder-filled air traffic, and inner levels that stretch far
+                                below the world’s surface.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Climate</div>
+                                <div class="content">Artificial, Temperate</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Terrain</div>
+                                <div class="content">Urban</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Species</div>
+                                <div class="content">Bith, Gran, Balosar, Patrolian, Mikkian</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card tatooine">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/tatooine.png"
+                                alt="Tatooine">
+                        </header>
+                        <main>
+                            <div class="level">Class 4</div>
+                            <div class="name">Tatooine</div>
+                            <p class="p-tatooine">Tatooine is harsh desert world orbiting twin suns in the galaxy’s
+                                Outer Rim. In the days of the Republic, settlers scratched out a living on moisture
+                                farms, while spaceport cities such as Mos Eisley and Mos Espa served as home base for
+                                smugglers, criminals, and other rogues.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Climate</div>
+                                <div class="content">Hot</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Terrain</div>
+                                <div class="content">Canyons, Deserts, Mesas</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Species</div>
+                                <div class="content">Jawa, Hutt, Bith, Klatooinian, Devaronian, Gran, Kubaz, Krayt
+                                    Dragon</div>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="card utapau">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/utapau.png"
+                                alt="Utapau">
+                        </header>
+                        <main>
+                            <div class="level">Class 5</div>
+                            <div class="name">Utapau</div>
+                            <p class="p-utapau">Ringed by numerous moons, the remote sanctuary of Utapau is a planet
+                                pitted with enormous sinkholes. Its windswept surface is dry and desert-like, but deep
+                                in the porous crust, at the bottom of the sinkholes are pools of life-giving water.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">Climate</div>
+                                <div class="content">Temperate</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">Terrain</div>
+                                <div class="content">Deserts, Plains</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">Species</div>
+                                <div class="content">Pau'an, Dactillion, Amani, Sugi, Utai</div>
+                            </div>
+                        </footer>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="spaceships" class="category">
+                <h1>Spaceships</h1>
+                <div class="cards">
+                    <div class="card millennium-falcon active">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/millennium-falcon.png"
+                                alt="Millennium Falcon">
+                        </header>
+                        <main>
+                            <div class="level">Class 10</div>
+                            <div class="name">Millennium Falcon</div>
+                            <p class="p-millenium-falcon">An extensively modified Corellian light freighter, the
+                                Millennium Falcon is a legend in smuggler circles and is coveted by many for being the
+                                fastest hunk of junk in the galaxy.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">affiliations</div>
+                                <div class="content">Rebel Alliance, The Resistance</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">locations</div>
+                                <div class="content">Corellia</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">dimensions</div>
+                                <div class="content">Length: 34.75m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card x-wing">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/x-wing.png"
+                                alt="X-Wing">
+                        </header>
+                        <main>
+                            <div class="level">Class 6</div>
+                            <div class="name">X-Wing</div>
+                            <p class="p-x-wing">The X-wing is a versatile Rebel Alliance starfighter that balances speed
+                                with firepower. Armed with four laser cannons and two proton torpedo launchers, the
+                                X-wing can take on anything the Empire throws at it.</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">affiliations</div>
+                                <div class="content">Rebel Alliance, Rebel Pilots</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">locations</div>
+                                <div class="content">--</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">dimensions</div>
+                                <div class="content">Length: 13.4m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card tie-fighter">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/tie-fighter.png"
+                                alt="TIE-Fighter">
+                        </header>
+                        <main>
+                            <div class="level">Class 6</div>
+                            <div class="name">TIE Fighter</div>
+                            <p class="p-tie-fighter">The TIE fighter was the unforgettable symbol of the Imperial fleet.
+                                Carried aboard Star Destroyers and battle stations, TIE fighters were single-pilot
+                                vehicles designed for fast-paced dogfights with Rebel X-wings and other starfighters.
+                            </p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">affiliations</div>
+                                <div class="content">Galactic Empire, Imperial Pilots</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">locations</div>
+                                <div class="content">Lothal Imperial airfield</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">dimensions</div>
+                                <div class="content">Length: 8.99m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card death-star">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/death-star.png"
+                                alt="Death Star">
+                        </header>
+                        <main>
+                            <div class="level">Class 20</div>
+                            <div class="name">Death Star</div>
+                            <p class="p-death-star">The Death Star was the Empire’s ultimate weapon: a moon-sized space
+                                station with the ability to destroy an entire planet. But the Emperor and Imperial
+                                officers like Grand Moff Tarkin underestimated the tenacity of the Rebel Alliance, who
+                                refused to bow to this technological terror…</p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">affiliations</div>
+                                <div class="content">Galactic Empire, Death Star Troopers</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">locations</div>
+                                <div class="content">-- hidden</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">dimensions</div>
+                                <div class="content">100 miles</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card imperial-shuttle">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/imperial-shuttle.png"
+                                alt="Imperial Shuttle">
+                        </header>
+                        <main>
+                            <div class="level">Class 4</div>
+                            <div class="name">Imperial Shuttle</div>
+                            <p class="p-imperial-shuttle">An elegant example that stands apart from typical brutish
+                                Imperial engineering, the Lambda-class shuttle is a multi-purpose transport used in the
+                                Imperial starfleet. When in flight, the side wings fold out for greater stabilization.
+                            </p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">affiliations</div>
+                                <div class="content">Galactic Empire</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">locations</div>
+                                <div class="content">--</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">dimensions</div>
+                                <div class="content">Length: 15.84m</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card nubian-yacht">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/h-type-nubian-yacht.png"
+                                alt="h-type nubian Yacht">
+                        </header>
+                        <main>
+                            <div class="level">Class 6</div>
+                            <div class="name">H-Type Nubian Yacht</div>
+                            <p class="p-nubian-yacht">The H-Type Nubian yacht was a sleek luxury yacht and what it
+                                lacked in weapons it made up for in style and a strong deflector shield. The signature
+                                silver finish is a mark that the ship belongs to a former member of Naboo’s monarchy.
+                            </p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">affiliations</div>
+                                <div class="content">Royal House of Naboo</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">locations</div>
+                                <div class="content">Naboo</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">dimensions</div>
+                                <div class="content">Length: 47.90m</div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="characters" class="category active">
+                <div class="cards">
+                    <div class="card solo active">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/han-solo.png"
+                                alt="Han Solo">
+                        </header>
+                        <main>
+                            <div class="level">Class 8</div>
+                            <div class="name">Han Solo</div>
+                            <p class="p-solo"></p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">locations</div>
+                                <div class="content">Mos Eisley Spaceport</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">weapons</div>
+                                <div class="content">Blaster pistol Blaster rifle</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">vehicles</div>
+                                <div class="content">Millenium Falcon</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card rey">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/rey.png" alt="Rey">
+                        </header>
+                        <main>
+                            <div class="level">Class 10</div>
+                            <div class="name">Rey</div>
+                            <p class="p-rey"></p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">locations</div>
+                                <div class="content">Jakku, Goazon Badlands, Rey's Home</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">weapons</div>
+                                <div class="content">Lightsaber, Blaster Pistol,</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">vehicles</div>
+                                <div class="content">Millennium Falcon, X-wing Starfighter, Rey's Speeder</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card chewie">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/chewie.png"
+                                alt="Chewie">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">Chewbacca</div>
+                            <p class="p-chewie"></p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">locations</div>
+                                <div class="content">Kashyyyk, Numidian</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">weapons</div>
+                                <div class="content">Bowcaster</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">vehicles</div>
+                                <div class="content">Millenium Falcon</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card jyn-erso">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/jyn-erso.png"
+                                alt="Jyn Erso">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">Jyn Erso</div>
+                            <p class="p-jyn-erso"></p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">locations</div>
+                                <div class="content">Lah'mu</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">weapons</div>
+                                <div class="content">Jyn Erso's BlasTech A-180 Blaster</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">vehicles</div>
+                                <div class="content">-- </div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card boba-fett">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/boba-fett.png"
+                                alt="Boba Fett">
+                        </header>
+                        <main>
+                            <div class="level">Class 8</div>
+                            <div class="name">Boba Fett</div>
+                            <p class="p-boba-fett"></p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">locations</div>
+                                <div class="content">Kamino</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">weapons</div>
+                                <div class="content">Blaster rifle Flame thrower</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">vehicles</div>
+                                <div class="content">Slave I</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card padme-amidala">
+                        <header class="bg-image">
+                            <img src="https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/padme-amidala.png"
+                                alt="Padmé Amidala">
+                        </header>
+                        <main>
+                            <div class="level">Class 7</div>
+                            <div class="name">Padmé Amidala</div>
+                            <p class="p-padme-amidala"></p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">locations</div>
+                                <div class="content">Naboo</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">weapons</div>
+                                <div class="content">Blaster rifle Flame thrower</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">vehicles</div>
+                                <div class="content">Naboo Royal Starship</div>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="card beckett">
+                        <header class="bg-image">
+                            <img src="../img/anakin.png"
+                                alt="Beckett">
+                        </header>
+                        <main>
+                            <div class="level">Class 1</div>
+                            <div class="name">Anakin Skywalker</div>
+                            <p class="p-beckett"></p>
+                        </main>
+                        <footer>
+                            <div class="left">
+                                <div class="title">locations</div>
+                                <div class="content">Tatooine</div>
+                            </div>
+                            <div class="middle">
+                                <div class="title">weapons</div>
+                                <div class="content">Sable laser</div>
+                            </div>
+                            <div class="right">
+                                <div class="title">vehicles</div>
+                                <div class="content">Muchos y variados</div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+            <btn class="previous">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-chevron-circle-left fa-w-16 fa-2x">
+                    <path fill="currentColor"
+                        d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+                        class=""></path>
+                </svg>
+            </btn>
+            <btn class="next">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    class="svg-inline--fa fa-chevron-circle-right fa-w-16 fa-2x">
+                    <path fill="currentColor"
+                        d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+                        class=""></path>
+                </svg>
+            </btn>
+
+        </div>
+
+        <div>
+            <!-- partial -->
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js'>
+
+            </script>
+            <script src="../style/personajes.js"></script>
+
+</body>
+
+</html>
