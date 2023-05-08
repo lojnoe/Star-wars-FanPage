@@ -1,77 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="shortcut icon" href="https://abs.twimg.com/hashflags/DisneyPlus_MandalorianS3_Grogu_2023_NEW/DisneyPlus_MandalorianS3_Grogu_2023_NEW.png">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Principal</title>
-    <script src="../js/buscador.js"></script> 
-  </head>
-  <body class="bodymain_index">
-    <!--CONTENEDOR PRINCIPAL NAV-->
-    <div id="background_nav">
-        <nav>
-          <!--LOGO IZQUIERDA-->
-            <label class="logo">
-                <div id="logoimg"></div>
-            </label>
-            <!--DIV FIXED DEL NAV PRINCIPAL-->
-            <div>
-              <!--TITULO SW-->
-              <label>
-                <a href="../index.html">
-                  <h1 class="animate__animated animate__fadeIn h1titunav"><p class="cursor_hand">STAR</p><p>WARS</p></h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="shortcut icon"
+    href="https://abs.twimg.com/hashflags/DisneyPlus_MandalorianS3_Grogu_2023_NEW/DisneyPlus_MandalorianS3_Grogu_2023_NEW.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Principal</title>
+  <script src="../js/buscador.js"></script>
+</head>
+
+<body class="bodymain_index">
+  <!--CONTENEDOR PRINCIPAL NAV-->
+  <div id="background_nav">
+    <nav>
+      <!--LOGO IZQUIERDA-->
+      <a href="../pages/planetas.html" target="_blank">
+        <label class="logo">
+          <div id="logoimg"></div>
+        </label></a>
+      <!--DIV FIXED DEL NAV PRINCIPAL-->
+      <div>
+        <!--TITULO SW-->
+        <label>
+          <a href="../index.html">
+            <h1 class="animate__animated animate__fadeIn h1titunav">
+              <p class="cursor_hand">STAR</p>
+              <p>WARS</p>
+            </h1>
+          </a>
+        </label>
+        <!--ICONOS SUPERIORES IZQUIERDA-->
+        <label class="logo">
+          <span class="wrapper">
+            <a href="https://www.facebook.com/starwars.es/" target="_blank" rel="noopener noreferrer">
+               <span class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </span>
+          </a>
+          <a href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer">
+            <span class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fab fa-twitter"></i></span>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/starwars/?hl=es" target="_blank" rel="noopener noreferrer">
+             <span class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </span>
+          </a>
+          <a href="https://github.com/lojnoe/EntornosWeb.git" target="_blank" rel="noopener noreferrer">
+            <span class="icon github">
+              <span class="tooltip">Github</span>
+              <span><i class="fab fa-github"></i></span>
+            </span>
+          </a>
+          <a href="https://www.youtube.com/@StarWarsEspana" target="_blank" rel="noopener noreferrer">
+            <span class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </span>
+          </a>
+          </span>
+        </label>
+        <label>
+          <!--buscador-->
+          <div id="wrap">
+            <form action="" autocomplete="on">
+              <input id="search" name="search" type="text" placeholder="Buscar"><input id="search_submit"
+                value="Rechercher" type="submit">
+            </form>
+          </div>
+        </label>
+        <!--ELEMENTOS DEL NAV-->
+        <ul class=" navicons">
+          <li><a href="armas.html">ARMAS</a></li>
+          <li><a href="droides.html">DROIDES</a></li>
+          <li><a href="naves.html">NAVES</a></li>
+          <li><a href="personajes.html">PERSONAJES</a></li>
+          <li><a href="planetas.html">PLANETAS</a></li>
+          <li><a href="social.html">SOCIAL</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--CARRUSEL DEL MAIN PRINCIPAL-->
+  <div>
+    <div class="maincontainer">
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="carousel-item">
+            <a href="https://www.espinof.com/fecha-de-estreno/the-mandalorian-todo-sabemos-temporada-3-serie-star-wars" target="_blank" rel="noopener noreferrer">
+              <img src="../img/grogu.jpeg">
+            </a>
+            
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <a href="https://www.ea.com/es-es/games/starwars/jedi/jedi-survivor" target="_blank" rel="noopener noreferrer">
+               <img src="../img/kal.jpeg">
+            </a>
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <a href="https://www.espinof.com/fecha-de-estreno/ahsoka-2022-fecha-estreno-reparto-trailer-todo-que-sabemos-serie-star-wars-para-disney-plus-rosario-dawson" target="_blank" rel="noopener noreferrer">
+               <img src="../img/ashoka.jpeg">
+            </a>  
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div>
+        <a href="https://www.espinof.com/criticas/temporada-2-star-wars-visions-vuelve-a-demostrar-que-lado-creativo-galaxia-esta-series-animacion" target="_blank" rel="noopener noreferrer">
+           <img class="card_vision" src="../img/vision.jpeg" alt="visionpetit">
+        </a>
+        <span class="card_titulo">STAR WARS VISION</span>
+        <img class="imagen" src="../img/vision2.jpeg" alt="imagen_debajo_carrusel">
+      </div>
+      <!--lista de anuncios abajo-->
+      <div class="contenedor_de_carruselbot">
+        <section class="game-section">
+          <div class="owl-carousel custom-carousel owl-theme">
+            <div class="item active ">
+              <div class="item-desc ">
+                <h3 class="h3-game texto"></h3>
+                <a href="https://starwars.fandom.com/es/wiki/Din_Grogu#:~:text=Din%20Grogu%2C%20conocido%20por%20muchos,el%20Templo%20Jedi%20en%20Coruscant." target="_blank">
+                  <p class="texto ">pulsa para conocer la historia de grogu</p>
+                  <img class="groguimg" src="../img/GROGU4.jpeg" alt="PRIMER_CUADRO_FOOTER_DE_IMAGENES">
                 </a>
-            </label>
-            <!--ICONOS SUPERIORES IZQUIERDA-->
-            <label class="logo">
-              <span class="wrapper">
-                <span class="icon facebook">
-                  <span class="tooltip">Facebook</span>
-                  <span><i class="fab fa-facebook-f"></i></span>
-                </span>
-                <span class="icon twitter">
-                  <span class="tooltip">Twitter</span>
-                  <span><i class="fab fa-twitter"></i></span>
-                </span>
-                <span class="icon instagram">
-                  <span class="tooltip">Instagram</span>
-                  <span><i class="fab fa-instagram"></i></span>
-                </span>
-                <span class="icon github">
-                  <span class="tooltip">Github</span>
-                  <span><i class="fab fa-github"></i></span>
-                </span>
-                <span class="icon youtube">
-                  <span class="tooltip">Youtube</span>
-                  <span><i class="fab fa-youtube"></i></span>
-                </span>
-              </span>
-            </label>
-            <label>
-              <!--buscador-->
-              <div id="wrap">
-                <form action="" autocomplete="on">
-                <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
-                </form>
               </div>
-            </label>
-            <!--ELEMENTOS DEL NAV-->
-            <ul class="centradoulnavbar">
-                <li><a href="#">NEWS + FEATURES</a></li>
-                <li><a href="">VIDEO</a></li>
-                <li><a href="">FILMS</a></li>
-                <li><a href="">SERIES</a></li>
-                <li><a href="">INTERACTIVE</a></li>
-                <li><a href="">DATABANK</a></li>
-            </ul>
             </div>
-        </nav> 
-    </div>  
-  </body>
+            <div class="item">
+              <video class="video1" src="../multimedia/video1.mp4" loop controls preload type="video/mp4"></video>
+              <div class="item-desc">
+              </div>
+            </div>
+            <a href="https://www.ea.com/es-es/games/starwars/battlefront/star-wars-battlefront-2/buy">
+              <div class="item imgcarrusels">
+              <div class="item-desc">
+                <h3 class=" textobtf2">Battlefront II</h3>
+              </div>
+            </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=9Z8mgkqjq90" target="_blank">
+              <div class="item imgcarrusels2">
+              <div class="item-desc">
+                <h3 class="h3-game textorog">ROGUE ONE</h3>
+              </div>
+            </div>
+            </a>
+            <a href="https://www.fortnite.com" target="_blank" rel="noopener noreferrer">
+              <div class="item imgcarrusels3">
+              <div class="item-desc">
+                <h3 class="h3-game">Fortnite</h3>
+              </div>
+            </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=Iq6-X-L92eI" target="_blank" rel="noopener noreferrer">
+              <div class="item imgcarrusels4">
+              <div class="item-desc">
+                <h3 class="h3-game">Episode 1</h3>
+              </div>
+            </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=kqkfjBKmWc4" target="_blank" rel="noopener noreferrer">
+              <div class="item imgcarrusels5">
+              <div class="item-desc">
+                <h3 class="h3-game">EPISODE 3</h3>
+              </div>
+            </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=y27dxaioPQo" target="_blank" rel="noopener noreferrer">
+              <div class="item imgcarrusels6">
+              <div class="item-desc">
+                <h3 class="h3-game textosound">Soundtrack</h3>
+              </div>
+            </div>
+            </a>
+          </div>
+      </div>
+      <div  class="titusvideo">
+        <h2 class="animate__animated animate__fadeIn">RECOPILACIÓN DE ESCENAS MÍTICAS DE LA SAGA</h2>
+        
+       </div>
+      <div class="videodiv">
+        <video  class="video2" src="../multimedia/Obi-Wan vs Anakin - Duelo En Mustafar _ Star Wars - La Venganza De Los Sith (2005) Clip 4K Ultra HD.mp4" loop controls preload type="video/mp4"></video>
+        <video  class="video3" src="../multimedia/Obi-Wan - Obi-Wan vs Darth Vader - (HDR - 4K - 5.1).mp4" loop controls preload type="video/mp4"></video>
+        <video  class="video2" src="../multimedia/Star Wars Episode III - Revenge of the Sith - Yoda VS Palpatine (Darth Sidious) - 4K ULTRA HD..mp4" loop controls preload type="video/mp4"></video>
+        <video  class="video3" src="../multimedia/Obi-Wan vs General Grievous - _Hello There_ _ Star Wars Revenge of the Sith 2005 Movie Clip HD 4K.mp4" loop controls preload type="video/mp4"></video>
+      </div>
+    </div><!--div del main-->
+  </div><!--div padre del main-->
+  <div>
+    <hr>
+    <footer>
+      <span>
+        Pagina main realizada por <i>Alvaro Olmos Sierra</i>
+        <a href="tel: +349999999">
+          <p class=" tlf">telf: +349999999</p></a>
+          <p class="email pcorreo">correo:
+            <a href="mailto:elcorreoquequieres@correo.com"><p class="pcorreo">
+              aos008@alu.medac.es</p>
+            </a>
+          </p>
+      </span>
+    </footer>
+  </div>
+  <!-- CODIGO JS PA REVISAR
+ <script>
+    $(".custom-carousel").owlCarousel({
+      autoWidth: true,
+      loop: true
+    });
+    $(document).ready(function () {
+      $(".custom-carousel .item").click(function () {
+        $(".custom-carousel .item").not($(this)).removeClass("active");
+        $(this).toggleClass("active");
+      });
+    });
+  </script>
+  -->
+</body>
 </html>
