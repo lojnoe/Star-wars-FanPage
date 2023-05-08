@@ -239,19 +239,6 @@ const updateCountdown = () => {
 requestAnimationFrame(updateCountdown);
 
 const altDates = [
-	{label:'~~~ 2021 ~~~', value:null, disabled:true},
-	{label:'Star Wars Visions Launch', value:'September 22, 2021'},
-	{label:'~~~ 2022 ~~~', value:null, disabled:true},
-	{title:'Perseverance One year on Mars', label:'Perseverance & Ingenuity: One year on Mars', value:'Feb 17, 2022'},
-	{label:'World Book Day', value:'March 3, 2022'},
-	{label:'International Women\'s Day', value:'March 8, 2022'},
-	{label:'Spring Solstice', value:'March 20, 2022'},
-	{title:'The Skywalker Saga Game Launch', label:'LEGO Star Wars: The Skywalker Saga Launch', value:'April 5, 2022'},
-	{label:'Earth Day', value:'April 22, 2022'},
-	{label:'Star Wars Day', value:'May 4, 2022'},
-	{label:'Andor series launch', value:'September 21, 2022'},
-	{label:'International Day of Non-Violence', value:'October 2, 2022'},
-	{label:'Winter Solistice', value:'December 21, 2022'},
 	{label:'~~~ 2023 ~~~', value:null, disabled:true},
 	{label:'World Book Day', value:'March 3, 2023'},
 	{label:'International Women\'s Day', value:'March 8, 2023'},
@@ -262,6 +249,8 @@ const altDates = [
 	{label:'Zelda Tears of the Kingdom Launch', value:'May 12, 2023'},
 	{label:'International Day of Non-Violence', value:'October 2, 2023'},
 	{label:'Winter Solistice', value:'December 21, 2023'},
+    {label:'~~~ 2024 ~~~', value:null, disabled:true},
+	{label:'Star Wars Day', value:'May 4, 2024'}
 ]
 const altDateSelect = document.querySelector('.dynamicList');
 const addDateOption = ({label, value, disabled}) => {
