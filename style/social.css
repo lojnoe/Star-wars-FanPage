@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+body {
+  background: whitesmoke;
+  background: black;
+  font-family: Star wars2;
+  font-size: 62.5%;
+}
+
+section {
+  min-width: 500px;
+}
+
+.wrapper {
+  color: whitesmoke;
+  height: 500px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.ui {
+  margin: 20px auto;
+  text-align: center;
+  width: 160px;
+}
+.ui .dynamicList {
+  margin-top: 10px;
+}
+
+label {
+  color: whitesmoke;
+}
+
+input[type=checkbox] {
+  vertical-align: middle;
+}
+
+a {
+  color: whitesmoke;
+}
+
+.centered {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.timeOutput {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.timeOutput .small {
+  display: inline-block;
+  font-size: 0.6rem;
+  font-weight: normal;
+  line-height: 0.7rem;
+  margin-bottom: 5px;
+  max-width: 142px;
+}
+.timeOutput .title {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+#background_nav {
+    display: block;
+    text-align: center;
+    background-color: #000000;
+    border-radius: 12px;
+    color: #d37a05;
+    padding: 70px;
+    margin: auto;
+    width: auto;
+}
+
+.h1titunav {
+    font-family: 'STAR WARS2';
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin: auto;
+    position: absolute;
+    top: -110px;
+    left: -90px;
+    display: block;
+}
+
+.h1titunav:hover {
+    color: rgb(121, 28, 184);
+    letter-spacing: 0px;
+}
+
+span>img {
+    width: auto;
+    height: auto;
+}
+
+.bodymain_index {
+    font-family: 'STAR WARS2'
+}
+
+.navicons {
+    background: #000000;
+    height: 40px;
+    width: auto;
+    display: block;
+    margin-left: 100px;
+
+}
+
+/*logo*/
+label.logo {
+    position: absolute;
+    left: 20px;
+    top: 200px;
+}
+
+.cursor_hand {
+    cursor: pointer;
+}
+
+#logoimg {
+    background-image: url("../img/jedilogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 70px;
+    width: 60px;
+    position: absolute;
+    top: -160px;
+    left: 120px;
+    display: block;
+}
+
+nav ul {
+    margin-top: 62px;
+    margin-right: 120px;
+    cursor: pointer;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 13px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    top: -12px;
+    text-decoration: none;
+}
+
+a.active,
+a:hover {
+    background-color: #ffffff;
+    transition: .5s;
+    color: #000000;
+}
+
+/*PROPIEDADES DE ICONOS SUPERIORES NAV*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+}
+
+.wrapper .icon {
+    position: relative;
+    top: -80px;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+    position: absolute;
+    top: 100px;
+    font-size: 14px;
+    background: #ffffff;
+    color: #0082e6 ;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+    background: #cd201f;
+    color: #ffffff;
+}
+
+/*esto alinea el titulo con los elementos del nav*/
+div>label {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+
+}
+
+/*BUSCADOR*/
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+@import url("https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css");
+
+
+#wrap {
+    display: inline-block;
+    position: absolute;
+    left: 1000px;
+    top: -120px;
+    height: 60px;
+    padding: 0;
+}
+
+input[type="text"] {
+    height: 60px;
+    font-size: 20px;
+    display: inline-block;
+    font-family: "Lato";
+    font-weight: 100;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+}
+
+input[type="text"]:focus:hover {
+    border-bottom: 1px solid #BBB;
+}
+
+input[type="text"]:focus {
+    width: 400px;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+}
+
+input[type="submit"] {
+    height: 67px;
+    width: 63px;
+    display: inline-flex;
+    color: red;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=") center center no-repeat;
+    text-indent: -10000px;
+    border: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+/*--------------------------*/
+/*----- propiedades de tamaño -----*/
+/*--------------------------*/
+
+@media (max-width: 92px) {
+    label.logo {
+        padding-left: 10px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 85px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        top: 80px;
+        transition: all .5s;
+        text-align: center;
+        background-color: #2c3e50;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.circulo{
+    position: absolute;
+    left: 35%;
+    
+}
+
+
+@font-face {
+
+    font-family: 'STAR WARS';
+
+    src: url("../Fonts/SF\ Distant\ Galaxy\ Outline.ttf");
+
+}
+
+@font-face {
+
+    font-family: 'STAR WARS2';
+
+    src: url("../Fonts/SF\ Distant\ Galaxy\ Italic.ttf");
+
+}
+
+@font-face {
+
+    font-family: 'STAR WARS3';
+
+    src: url("../Fonts/SF\ Distant\ Galaxy\ Symbols\ Italic.ttf");
+
+}

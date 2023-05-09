@@ -1,18 +1,187 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="Star Wars Fan" content="width=device-width, initial-scale=1.0">
-    <title>Star Wars Fan</title>
-    
-    <link rel="shortcut icon" href="https://abs.twimg.com/hashflags/DisneyPlus_MandalorianS3_Grogu_2023_NEW/DisneyPlus_MandalorianS3_Grogu_2023_NEW.png">
-    <link rel="stylesheet"  href="style/style.css">
-</head>
-<body>
-    <h1 > STAR WARS</h1>
-    <div class="container">
+<html lang="en">
 
-        
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/naves.css" />
+  <link rel="shortcut icon"
+    href="https://abs.twimg.com/hashflags/DisneyPlus_MandalorianS3_Grogu_2023_NEW/DisneyPlus_MandalorianS3_Grogu_2023_NEW.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Principal</title>
+  <script src="../js/buscador.js"></script>
+</head>
+
+<body class="bodymain_index">
+  <!--CONTENEDOR PRINCIPAL NAV-->
+  <div id="background_nav">
+    <nav>
+      <!--LOGO IZQUIERDA-->
+      <a href="../pages/planetas.html" target="_blank">
+        <label class="logo">
+          <div id="logoimg"></div>
+        </label></a>
+      <!--DIV FIXED DEL NAV PRINCIPAL-->
+      <div>
+        <!--TITULO SW-->
+        <label>
+          <a href="../index.html">
+            <h1 class="animate__animated animate__fadeIn h1titunav">
+              <p class="cursor_hand">STAR</p>
+              <p>WARS</p>
+            </h1>
+          </a>
+        </label>
+        <!--ICONOS SUPERIORES IZQUIERDA-->
+        <label class="logo">
+          <span class="wrapper">
+            <a href="https://www.facebook.com/starwars.es/" target="_blank" rel="noopener noreferrer">
+               <span class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </span>
+          </a>
+          <a href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer">
+            <span class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fab fa-twitter"></i></span>
+            </span>
+          </a>
+          <a href="https://www.instagram.com/starwars/?hl=es" target="_blank" rel="noopener noreferrer">
+             <span class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </span>
+          </a>
+          <a href="https://github.com/lojnoe/EntornosWeb.git" target="_blank" rel="noopener noreferrer">
+            <span class="icon github">
+              <span class="tooltip">Github</span>
+              <span><i class="fab fa-github"></i></span>
+            </span>
+          </a>
+          <a href="https://www.youtube.com/@StarWarsEspana" target="_blank" rel="noopener noreferrer">
+            <span class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </span>
+          </a>
+          </span>
+        </label>
+        <label>
+          <!--buscador-->
+          <div id="wrap">
+            <form action="" autocomplete="on">
+              <input id="search" name="search" type="text" placeholder="Buscar"><input id="search_submit"
+                value="Rechercher" type="submit">
+            </form>
+          </div>
+        </label>
+        <!--ELEMENTOS DEL NAV-->
+        <ul class=" navicons">
+          <li><a href="Armas.html">ARMAS</a></li>
+          <li><a href="droides.html">DROIDES</a></li>
+          <li><a href="naves.html">NAVES</a></li>
+          <li><a href="personajes.html">PERSONAJES</a></li>
+          <li><a href="planetas.html">PLANETAS</a></li>
+          <li><a href="social.html">SOCIAL</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--CARRUSEL DEL MAIN-->
+  <main class="maincontainer">
+    <div class="containernaves1">
+      <article class="articlenaves">
+        <h2 class="titulonave">ANAKIN SKYWALKER'S PODRACER</h2>
+        <div class="imagennave">
+          <img class="tamañoimagen" src="../img/anakin-podracer.png" alt="fondo">
+          <img class="tamañoimagen" src="../img/anakinp.png" alt="transicion">
+        </div>
+        <span class="textonaves">Built in secret by the young slave Anakin Skywalker, this shiny blue and silver
+          Podracer was boasted to be the fastest ever to compete in the Boonta Eve Classic. It wasn't idle puffery by
+          its creator -- when thrown into the cutthroat racing competition, this Podracer's performance gave Anakin the
+          edge he needed to win the race and his freedom. Smaller and leaner than all the other competing Podracers,
+          Anakin's vehicle follows the same basic design found throughout the sport: a small cockpit pulled by two
+          high-powered engines. The engines are locked to each other via an energy binder, and durable control cables
+          connect the engines to the cockpit.</span>
+      </article>
     </div>
+    <div class="containernaves2">
+      <article class="articlenaves">
+        <h2 class="titulonave">ANTIQUE N-1 STARFIGHTER</h2>
+        <div class="imagennave">
+          <img class="tamañoimagen" src="../img/n1starfighter.jpeg" alt="fondo">
+          <img class="tamañoimagen" src="../img/n1starfightersinfondo.webp" alt="transicion">
+        </div>
+        <span class="textonaves">Long after the fall of the Republic, a handcrafted Naboo N-1 starfighter remains as a
+          relic from a simpler time. In the hands of Peli Motto, such an artifact can be extensively modified to be
+          truly one-of-a-kind, an off-the-grid combination of speed, precision, and style.</span>
+      </article>
+    </div>
+    <div class="containernaves1">
+      <article class="articlenaves">
+        <h2 class="titulonave">ARC-170 STARFIGHTER</h2>
+        <div class="imagennave">
+          <img class="tamañoimagen" src="../img/arc170.jpeg" alt="fondo">
+          <img class="tamañoimagen" src="../img/arc170sinfondo.webp" alt="transicion">
+        </div>
+        <span class="textonaves">
+          Protecting the skies over Republic worlds were specialized clone fighter forces flying the latest in
+          starfighter technology. The ARC-170 fighter was a bulky, aggressive ship covered with weapons. Three clone
+          trooper pilots operated this advanced combat craft, with a pilot handling the flight maneuvers, a copilot
+          operating the laser cannons mounted on the ship's wide wings, and a tailgunner operating the dorsal
+          rear-facing cannon. The fighter also carried an astromech droid for onboard repairs.</span>
+      </article>
+    </div>
+    <div class="containernaves2">
+      <article class="articlenaves">
+        <h2 class="titulonave">BLACK ONE</h2>
+        <div class="imagennave">
+          <img class="tamañoimagen" src="../img/blackone.jpeg" alt="fondo">
+          <img class="tamañoimagen" src="../img/blackonesinfondo.png" alt="transicion">
+        </div>
+        <span class="textonaves">
+          Poe Dameron’s personal T-70 X-wing, Black One delivered the critical blows against Starkiller Base, returning
+          to D’Qar with a bad case of carbon-scoring and frayed fire-control linkages. With the Resistance in grave
+          danger, Poe and BB-8 flew with an experimental thrust accelerator pod designed to give Black One even greater
+          combat speed. The X-wing played a key role in the attack on a First Order Dreadnought, but was destroyed by
+          Kylo Ren’s attack run against the Raddus.</span>
+      </article>
+    </div>
+    <div class="containernaves1">
+      <article class="articlenaves">
+        <h2 class="titulonave">CLONE Z-95 STARFIGHTER</h2>
+        <div class="imagennave">
+          <img class="tamañoimagen" src="../img/clonez95.jpeg" alt="fondo">
+          <img class="tamañoimagen" src="../img/Clone_Z-95.webp" alt="transicion">
+        </div>
+        <span class="textonaves">
+          Though an outdated starfighter, the Z-95 boasts endurance and adaptability. The clone pilots of the Galactic
+          Republic used the Z-95 Headhunter during the Clone Wars. A multi-purpose starfighter, the Z-95 has spawned
+          countless variants, with the Republic making its own mark on the Headhunter's large production run with a
+          clone trooper-specific model. The Z-95 is largely recognized as a respectable and versatile snub-fighter of
+          its era, and was the forerunner of the incredibly successful X-wing starfighter.</span>
+      </article>
+    </div>
+    <div class="containernaves2">
+      <article class="articlenaves">
+        <h2 class="titulonave">DALKOR DAGGER</h2>
+        <div class="imagennave">
+          <img class="tamañoimagen" src="../img/dalkor.jpeg" alt="fondo">
+          <img class="tamañoimagen" src="../img/dalkor.png" alt="transicion">
+        </div>
+        <span class="textonaves">
+          To match the fearsome bounty hunter's menacing physique, Ax Tagrin's ship, the Dalkor Dagger, has been
+          fortified and outfitted with an impressive arsenal of weaponry. But the delicate technical aspects that
+          comprise the ship's computer are still vulnerable to attack from within.</span>
+      </article>
+    </div>
+  </main>
+
 </body>
+
 </html>
