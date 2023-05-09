@@ -17,9 +17,10 @@
     <div id="background_nav">
         <nav>
           <!--LOGO IZQUIERDA-->
+          <a href="../pages/planetas.html" target="_blank">
             <label class="logo">
                 <div id="logoimg"></div>
-            </label>
+            </label></a>
             <!--DIV FIXED DEL NAV PRINCIPAL-->
             <div>
               <!--TITULO SW-->
@@ -57,21 +58,59 @@
               <!--buscador-->
               <div id="wrap">
                 <form action="" autocomplete="on">
-                <input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+                <input id="search" name="search" type="text" placeholder="Buscar"><input id="search_submit" value="Rechercher" type="submit">
                 </form>
               </div>
             </label>
             <!--ELEMENTOS DEL NAV-->
-            <ul class="centradoulnavbar">
-                <li><a href="#">NEWS + FEATURES</a></li>
-                <li><a href="">VIDEO</a></li>
-                <li><a href="">FILMS</a></li>
-                <li><a href="">SERIES</a></li>
-                <li><a href="">INTERACTIVE</a></li>
-                <li><a href="">DATABANK</a></li>
+            <ul class=" navicons">
+                <li><a href="#">ARMAS</a></li>
+                <li><a href="">DROIDES</a></li>
+                <li><a href="">NAVES</a></li>
+                <li><a href="">PERSONAJES</a></li>
+                <li><a href="">PLANETAS</a></li>
+                <li><a href="">SOCIAL</a></li>
             </ul>
             </div>
         </nav> 
-    </div>  
+    </div> 
+    <!--CARRUSEL DEL MAIN-->
+    <div>
+      <main class="maincontainer">
+        <div class="carousel">
+          <div class="carousel-inner">
+              <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+              <div class="carousel-item">
+                  <img src="../img/grogu.jpeg">
+              </div>
+              <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item">
+                  <img src="../img/kal.jpeg">
+              </div>
+              <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+              <div class="carousel-item">
+                  <img src="../img/ashoka.jpeg">
+              </div>
+              <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+              <label for="carousel-2" class="carousel-control next control-1">›</label>
+              <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+              <label for="carousel-3" class="carousel-control next control-2">›</label>
+              <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+              <label for="carousel-1" class="carousel-control next control-3">›</label>
+              <ol class="carousel-indicators">
+                  <li>
+                      <label for="carousel-1" class="carousel-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel-2" class="carousel-bullet">•</label>
+                  </li>
+                  <li>
+                      <label for="carousel-3" class="carousel-bullet">•</label>
+                  </li>
+              </ol>
+          </div>
+      </div>
+      </main>
+    </div> 
   </body>
 </html>
