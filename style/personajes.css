@@ -1,0 +1,836 @@
+body {
+    background: url("https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-01.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font: 14px/20px "Nunito", Arial, sans-serif;
+    overflow-x: hidden;
+    transition: background 3s linear;
+  }
+  .container {
+    width: 50%;  
+    margin: 10px auto;
+    text-align: center;
+  }
+  .categories {
+    margin: 0 auto;
+    max-width: 360px;
+    transform: translateX(0);
+  }
+  .category {
+    margin: 0 auto;
+    display: none;
+  }
+  .category.active {
+    display: block;
+  }
+  .category h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+  }
+  .cards{
+    width: 300px;
+    height: 550px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    padding: 100px 0px; 
+  }
+  .card {
+    opacity: 0;
+    position: absolute;
+    width: 300px;
+    height: 546px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 15px 30px -15px black;
+    transform: translateX(-100px);
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .card.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.7s;
+    transition: all 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .card.active ~ .card
+  {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  .card header img {
+      width: 350px;
+      position: absolute;
+      top: -85px;
+      left: -25px;
+  }
+  .card header.bg-image {
+      position: relative;
+      height: 230px;
+      margin-bottom: 20px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+  }
+
+  .card main .level {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: #EC9B3B;
+  }
+  .card main .name {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  .card main p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #7d8c90;
+    padding: 0 25px;
+    text-align: left;
+    line-height: 15px;
+  }
+  .card footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 15%;
+    width: 100%;
+    background: #ec9b3b;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .card footer > div {
+    flex: 1 1 0;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: left;
+    line-height: 14px;
+    padding: 10px 15px 5px 15px;
+  }
+  .card footer .left .title, .card footer .middle .title, .card footer .right .title {
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 3px;
+  }
+  .card footer div .content {
+    font-weight: 400;
+    font-size: 11px;
+    text-align: left;
+    line-height: 14px;
+    margin-left: 2px;
+  }
+  btn {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  btn svg {
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    border: 1px black solid;
+  }
+  btn svg:hover {
+    color: rgba(255, 255, 255, 1);
+  }
+  btn.previous {
+    position: absolute;
+    left: -1%;
+    top: 50%;
+  }
+  btn.next {
+    position: absolute;
+    right: -1%;
+    top: 50%;
+  }
+  
+  
+  /*** Characters specific ***/
+  
+  .card.solo header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/characters-plain-bg-01.jpg);
+    background-size: 400px;
+  }
+  .card.rey header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/characters-plain-bg-02.jpg);
+    background-size: 750px;
+  }
+  .card.chewie header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/characters-plain-bg-03.jpg);
+    background-size: 600px;
+  }
+  .card.jyn-erso header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/characters-plain-bg-04.jpg);
+    background-size: 950px;
+  }
+  .card.boba-fett header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/characters-plain-bg-04.jpg);
+    background-size: 600px;
+  }
+  .card.padme-amidala header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/characters-plain-bg-01.jpg);
+    background-size: 920px;
+  }
+  .card.beckett header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/characters-plain-bg-02.jpg);
+    background-size: 500px;
+  }
+  
+  #characters footer {
+    background: #ec9b3b;
+  }
+  #characters footer > div {
+    border-right: 1px solid #bd7c2f;
+  }
+  #characters footer div:last-child {
+    border-right: none;
+  }
+  
+  /*** Spaceships specific ***/
+  
+  .card.millennium-falcon header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/millennium-falcon-plain-bg.jpg);
+    background-size: 450px;
+  }
+  .card.x-wing header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/x-wing-plain-bg.jpg);
+    background-size: 450px;
+  }
+  .card.tie-fighter header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/millennium-falcon-plain-bg.jpg);
+    background-size: 650px;
+  }
+  .card.death-star header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/x-wing-plain-bg.jpg);
+    background-size: 650px;
+  }
+  .card.imperial-shuttle header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/x-wing-plain-bg.jpg);
+    background-size: 850px;
+  }
+  .card.nubian-yacht header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/x-wing-plain-bg.jpg);
+    background-size: 525px;
+  }
+  
+  #spaceships footer {
+    background: #b31a53;
+  }
+  
+  
+  /*** locations specific ***/
+  
+  .card.mustafar header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-plain-bg.jpg);
+    background-size: 450px;
+  }
+  .card.coruscant header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-plain-bg.jpg);
+    background-size: 950px;
+  }
+  .card.tatooine header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-plain-bg.jpg);
+    background-size: 650px;
+  }
+  .card.utapau header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-plain-bg.jpg);
+    background-size: 1150px;
+  }
+  
+  #locations footer {
+    background: #22262d;
+  }
+  
+  
+  /*** droids specific ***/
+  
+  .card.r2-d2 header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg);
+    background-size: 450px;
+  }
+  .card.c2-b5 header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg);
+    background-size: 650px;
+  }
+  .card.c-3po header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg);
+    background-size: 525px;
+  }
+  .card.battle-droid header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg);
+    background-size: 950px;
+  }
+  .card.droideka header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg);
+    background-size: 550px;
+  }
+  .card.bb-8 header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg);
+    background-size: 800px;
+  }
+  .card.k-2so header {
+    background: url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg);
+    background-size: 590px;
+  }
+  
+  #droids footer {
+    background: #51676f;;
+  }
+  
+  
+  /*** Media queries ***/
+  
+  @media (max-width: 414px) {
+    .container {
+      width: 95vw;  
+      margin: 10px auto 100px auto;
+      text-align: center;
+    }
+  }
+  
+  
+  /*** Hamburger navigation ***/
+  
+  *:focus {
+      outline: none;
+  }
+  ul, li {
+      list-style: none;
+      padding: 0;
+  }
+  
+  .burger:before {
+      content:'\2630';
+      font-size: 1.5rem;
+    color: #fedc2a;
+  }
+  .burger-is-open:before {
+    color: #002832;
+  }
+  
+  
+  
+  /*** clouds, rocks... animation per category ***/
+  
+  #flying-object-01 {
+    top: 3vh;
+    left: 4vw;
+    position: absolute;
+  }
+  #flying-object-02 {
+    bottom: 7vh;
+    left: 25vw;
+    position: absolute;
+  }
+  
+  /* clouds */
+  .cloud-01 {
+    animation: move-1 90s infinite;
+    transform: translate(0);
+  }
+  .cloud-02 {
+    animation: move-2 90s infinite;
+    transform: translate(0);
+  }
+  
+  
+  /* rocks */
+  .meteor-01 {
+    animation: rotate-1 90s infinite;
+    transform: rotate(-5deg);
+  }
+  .meteor-02 {
+    animation: rotate-2 90s infinite;
+    transform: rotate(15deg);
+  }
+  
+  @keyframes move-1 {
+    40% {
+      -moz-transform: translate(-20vw);
+      -webkit-transform: translate(-20vw);
+      transform: translate(-20vw);
+    }
+  }
+  @keyframes move-2 {
+    50% {
+      -moz-transform: translate(35vw);
+      -webkit-transform: translate(35vw);
+      transform: translate(35vw);
+    }
+  }
+  @keyframes rotate-1 {
+    50% {
+      -moz-transform: rotate(145deg) translate(35vw);
+      -webkit-transform: rotate(145deg) translate(35vw);
+      transform: rotate(145deg) translate(35vw);
+    }
+  }
+  @keyframes rotate-2 {
+    50% {
+      -moz-transform: rotate(-105deg) translate(-20vw);
+      -webkit-transform: rotate(-105deg) translate(-20vw);
+      transform: rotate(-105deg) translate(-20vw);
+    }
+  }
+  
+  
+  /* typed.js restyling stuff */
+  
+  .p-solo::after, .p-rey::after, .p-chewie::after, .p-jyn-erso::after, .p-boba::after, p-padme-amidala::after, .p-beckett::after  {
+      content: '|';
+    color: #000;
+    font-weight: 900;
+    margin-left: 3px;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+  }
+  .typed-cursor{
+    opacity: 0;
+      display: none;
+  }
+  @keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+      0% { opacity:1; }
+      50% { opacity:0; }
+      100% { opacity:1; }
+  }
+  
+  /*** Preload all images ***/
+  
+  body::after { 
+    position:absolute; 
+    width:0; 
+    height:0; 
+    overflow:hidden; 
+    z-index:-1; 
+    content:
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/wireframe-tie-fighter.png)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-plain-bg.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-plain-bg.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/x-wing-plain-bg.jpg)
+  
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-01.jpg)                 
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-02.jpg)           
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-03.jpg) 
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-04.jpg) 
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-05.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-06.jpg)                 
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/star-wars-bg-07.jpg)
+  
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/spaceships-bg-01.jpg) 
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/spaceships-bg-02.jpg) 
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/spaceships-bg-03.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/spaceships-bg-04.jpg) 
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/spaceships-bg-05.jpg) 
+  url(https://fwbmatch.fra1.digitaloceanspaces.com/starwars/spaceships-bg-06.jpg)
+  
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-bg-01.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-bg-02.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-bg-03.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/locations-bg-04.jpg)
+  
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-bg-01.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-bg-02.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-bg-03.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-bg-04.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-bg-05.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-bg-06.jpg)
+  url(https://upsights.fra1.digitaloceanspaces.com/fwbmatch/starwars/droids-bg-07.jpg);
+  }
+
+  /*NAVBAR*/
+
+#background_nav {
+  display: block;
+  text-align: center;
+  background-color: #000000;
+  border-radius: 12px;
+  color: #d37a05;
+  padding: 70px;
+  margin: auto;
+  width: auto;
+}
+
+.h1titunav {
+  font-family: 'STAR WARS2';
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  margin: auto;
+  position: absolute;
+  top: -110px;
+  left: -120px;
+  display: block;
+}
+
+.h1titunav:hover {
+  color: rgb(121, 28, 184);
+  letter-spacing: 0px;
+}
+
+span>img {
+  width: auto;
+  height: auto;
+}
+
+.bodymain_index {
+  font-family: 'STAR WARS2';
+}
+
+.navicons {
+  background: #000000;
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/*logo*/
+label.logo {
+  position: absolute;
+  left: 20px;
+  top: 200px;
+}
+
+.cursor_hand {
+  cursor: pointer;
+}
+
+#logoimg {
+  background-image: url("../img/jedilogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 70px;
+  width: 60px;
+  position: absolute;
+  top: -160px;
+  left: 120px;
+  display: block;
+}
+
+nav ul {
+  margin-top: 62px;
+  margin-right: 120px;
+  cursor: pointer;
+
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  top: -12px
+}
+
+a.active,
+a:hover {
+  background-color: #ffffff;
+  transition: .5s;
+  color: #000000;
+}
+
+/*PROPIEDADES DE ICONOS SUPERIORES NAV*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  top: -80px;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 100px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #cd201f;
+  color: #ffffff;
+}
+
+/*esto alinea el titulo con los elementos del nav*/
+div>label {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+
+}
+
+/*BUSCADOR*/
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+@import url("https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css");
+
+
+#wrap {
+  display: inline-block;
+  position: absolute;
+  left: 1000px;
+  top: -120px;
+  height: 60px;
+  padding: 0;
+}
+
+input[type="text"] {
+  height: 60px;
+  font-size: 20px;
+  display: inline-block;
+  font-family: "Lato";
+  font-weight: 100;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 3px;
+  padding-right: 60px;
+  width: 0px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: none;
+  z-index: 3;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+
+input[type="text"]:focus:hover {
+  border-bottom: 1px solid #BBB;
+}
+
+input[type="text"]:focus {
+  width: 400px;
+  z-index: 1;
+  border-bottom: 1px solid #BBB;
+  cursor: text;
+}
+
+input[type="submit"] {
+  height: 67px;
+  width: 63px;
+  display: inline-flex;
+  color: red;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFU1NT9fX1lJSUXl5e1dXVfn5+c3Nz6urqv7+/tLS0iYmJqampn5+fysrK39/faWlp////Vi4ZywAAABF0Uk5T/////////////////////wAlrZliAAABLklEQVR42rSWWRbDIAhFHeOUtN3/ags1zaA4cHrKZ8JFRHwoXkwTvwGP1Qo0bYObAPwiLmbNAHBWFBZlD9j0JxflDViIObNHG/Do8PRHTJk0TezAhv7qloK0JJEBh+F8+U/hopIELOWfiZUCDOZD1RADOQKA75oq4cvVkcT+OdHnqqpQCITWAjnWVgGQUWz12lJuGwGoaWgBKzRVBcCypgUkOAoWgBX/L0CmxN40u6xwcIJ1cOzWYDffp3axsQOyvdkXiH9FKRFwPRHYZUaXMgPLeiW7QhbDRciyLXJaKheCuLbiVoqx1DVRyH26yb0hsuoOFEPsoz+BVE0MRlZNjGZcRQyHYkmMp2hBTIzdkzCTc/pLqOnBrk7/yZdAOq/q5NPBH1f7x7fGP4C3AAMAQrhzX9zhcGsAAAAASUVORK5CYII=") center center no-repeat;
+  text-indent: -10000px;
+  border: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/*--------------------------*/
+/*----- propiedades de tamaño -----*/
+/*--------------------------*/
+
+@media (max-width: 92px) {
+  label.logo {
+    padding-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 85px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    top: 80px;
+    transition: all .5s;
+    text-align: center;
+    background-color: #2c3e50;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+@font-face {
+
+  font-family: 'STAR WARS';
+
+  src: url("../Fonts/SF\ Distant\ Galaxy\ Outline.ttf");
+
+}
+
+@font-face {
+
+  font-family: 'STAR WARS2';
+
+  src: url("../Fonts/SF\ Distant\ Galaxy\ Italic.ttf");
+
+}
+
+@font-face {
+
+  font-family: 'STAR WARS3';
+
+  src: url("../Fonts/SF\ Distant\ Galaxy\ Symbols\ Italic.ttf");
+
+}
+
+label > span > a:hover {
+    background-color: #ffffff00 ;
+}
+
+a{
+    text-decoration: none;
+    font-family: Star wars2;
+}
+
