@@ -1221,7 +1221,8 @@ a:hover {
 footer{
    color: #BBB;
    position: absolute;
-   top: 4400px;
+   top: 4700px;
+   left: -160px;
 }
 footer>span{
   position: relative;
