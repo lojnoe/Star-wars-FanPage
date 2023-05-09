@@ -1,116 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="shortcut icon" href="https://abs.twimg.com/hashflags/DisneyPlus_MandalorianS3_Grogu_2023_NEW/DisneyPlus_MandalorianS3_Grogu_2023_NEW.png">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Principal</title>
-    <script src="../js/buscador.js"></script> 
-  </head>
-  <body class="bodymain_index">
-    <!--CONTENEDOR PRINCIPAL NAV-->
-    <div id="background_nav">
-        <nav>
-          <!--LOGO IZQUIERDA-->
-          <a href="../pages/planetas.html" target="_blank">
-            <label class="logo">
-                <div id="logoimg"></div>
-            </label></a>
-            <!--DIV FIXED DEL NAV PRINCIPAL-->
-            <div>
-              <!--TITULO SW-->
-              <label>
-                <a href="../index.html">
-                  <h1 class="animate__animated animate__fadeIn h1titunav"><p class="cursor_hand">STAR</p><p>WARS</p></h1>
-                </a>
-            </label>
-            <!--ICONOS SUPERIORES IZQUIERDA-->
-            <label class="logo">
-              <span class="wrapper">
-                <span class="icon facebook">
-                  <span class="tooltip">Facebook</span>
-                  <span><i class="fab fa-facebook-f"></i></span>
-                </span>
-                <span class="icon twitter">
-                  <span class="tooltip">Twitter</span>
-                  <span><i class="fab fa-twitter"></i></span>
-                </span>
-                <span class="icon instagram">
-                  <span class="tooltip">Instagram</span>
-                  <span><i class="fab fa-instagram"></i></span>
-                </span>
-                <span class="icon github">
-                  <span class="tooltip">Github</span>
-                  <span><i class="fab fa-github"></i></span>
-                </span>
-                <span class="icon youtube">
-                  <span class="tooltip">Youtube</span>
-                  <span><i class="fab fa-youtube"></i></span>
-                </span>
-              </span>
-            </label>
-            <label>
-              <!--buscador-->
-              <div id="wrap">
-                <form action="" autocomplete="on">
-                <input id="search" name="search" type="text" placeholder="Buscar"><input id="search_submit" value="Rechercher" type="submit">
-                </form>
-              </div>
-            </label>
-            <!--ELEMENTOS DEL NAV-->
-            <ul class=" navicons">
-                <li><a href="#">ARMAS</a></li>
-                <li><a href="">DROIDES</a></li>
-                <li><a href="">NAVES</a></li>
-                <li><a href="">PERSONAJES</a></li>
-                <li><a href="">PLANETAS</a></li>
-                <li><a href="">SOCIAL</a></li>
-            </ul>
-            </div>
-        </nav> 
-    </div> 
-    <!--CARRUSEL DEL MAIN-->
-    <div>
-      <main>
-        <div class="carousel">
-          <div class="carousel-inner">
-              <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-              <div class="carousel-item">
-                  <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without">
-              </div>
-              <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-              <div class="carousel-item">
-                  <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
-              </div>
-              <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-              <div class="carousel-item">
-                  <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel">
-              </div>
-              <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-              <label for="carousel-2" class="carousel-control next control-1">›</label>
-              <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-              <label for="carousel-3" class="carousel-control next control-2">›</label>
-              <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-              <label for="carousel-1" class="carousel-control next control-3">›</label>
-              <ol class="carousel-indicators">
-                  <li>
-                      <label for="carousel-1" class="carousel-bullet">•</label>
-                  </li>
-                  <li>
-                      <label for="carousel-2" class="carousel-bullet">•</label>
-                  </li>
-                  <li>
-                      <label for="carousel-3" class="carousel-bullet">•</label>
-                  </li>
-              </ol>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="shortcut icon"
+    href="https://abs.twimg.com/hashflags/DisneyPlus_MandalorianS3_Grogu_2023_NEW/DisneyPlus_MandalorianS3_Grogu_2023_NEW.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Principal</title>
+  <script src="../js/buscador.js"></script>
+</head>
+
+<body class="bodymain_index">
+  <!--CONTENEDOR PRINCIPAL NAV-->
+  <div id="background_nav">
+    <nav>
+      <!--LOGO IZQUIERDA-->
+      <a href="../pages/planetas.html" target="_blank">
+        <label class="logo">
+          <div id="logoimg"></div>
+        </label></a>
+      <!--DIV FIXED DEL NAV PRINCIPAL-->
+      <div>
+        <!--TITULO SW-->
+        <label>
+          <a href="../index.html">
+            <h1 class="animate__animated animate__fadeIn h1titunav">
+              <p class="cursor_hand">STAR</p>
+              <p>WARS</p>
+            </h1>
+          </a>
+        </label>
+        <!--ICONOS SUPERIORES IZQUIERDA-->
+        <label class="logo">
+          <span class="wrapper">
+            <span class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </span>
+            <span class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fab fa-twitter"></i></span>
+            </span>
+            <span class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </span>
+            <span class="icon github">
+              <span class="tooltip">Github</span>
+              <span><i class="fab fa-github"></i></span>
+            </span>
+            <span class="icon youtube">
+              <span class="tooltip">Youtube</span>
+              <span><i class="fab fa-youtube"></i></span>
+            </span>
+          </span>
+        </label>
+        <label>
+          <!--buscador-->
+          <div id="wrap">
+            <form action="" autocomplete="on">
+              <input id="search" name="search" type="text" placeholder="Buscar"><input id="search_submit"
+                value="Rechercher" type="submit">
+            </form>
           </div>
+        </label>
+        <!--ELEMENTOS DEL NAV-->
+        <ul class=" navicons">
+          <li><a href="armas.html">ARMAS</a></li>
+          <li><a href="droides.html">DROIDES</a></li>
+          <li><a href="naves.html">NAVES</a></li>
+          <li><a href="personajes.html">PERSONAJES</a></li>
+          <li><a href="planetas.html">PLANETAS</a></li>
+          <li><a href="social.html">SOCIAL</a></li>
+        </ul>
       </div>
-      </main>
-    </div> 
-  </body>
+    </nav>
+  </div>
+  <!--CARRUSEL DEL MAIN-->
+  <div>
+    <main>
+      <div class="carousel">
+        <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+            checked="checked">
+          <div class="carousel-item">
+            <img src="http://fakeimg.pl/2000x800/0079D8/fff/?text=Without">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+            <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel">
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+            <li>
+              <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+              <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
 </html>
